@@ -273,6 +273,7 @@ Flags.sort = async function (flagIds, sort) {
 	return flagIds;
 };
 
+//used Chatgpt to help me refactor the code
 Flags.validate = async function (payload) {
     const [target, reporter] = await Promise.all([
         Flags.getTarget(payload.type, payload.id, payload.uid),
